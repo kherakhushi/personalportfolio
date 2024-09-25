@@ -17,7 +17,7 @@ work to potential employers or clients.<br>
 · Web Design: creating a professional and attractive layout<br>
 This project is ideal for anyone looking to create a personal portfolio that effectively showcases their skills and
 projects.
-<br># My Portfolio Project
+# My Portfolio Project
 
 ## Description
 This project is a personal portfolio showcasing my web development skills and projects.
