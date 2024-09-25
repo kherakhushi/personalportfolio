@@ -17,3 +17,35 @@ work to potential employers or clients.<br>
 · Web Design: creating a professional and attractive layout<br>
 This project is ideal for anyone looking to create a personal portfolio that effectively showcases their skills and
 projects.
+<br># My Portfolio Project
+
+## Description
+This project is a personal portfolio showcasing my web development skills and projects.
+
+# Technologies Used
+- HTML
+- CSS
+- JavaScript
+- PHP
+- MySQL
+
+-><b> Database Setup</b>
+# Database Name
+`my_portfolio_db`
+
+# Database Structure
+1. **Users Table**
+   - `id` (INT, Primary Key)
+   - `name` (VARCHAR)
+   - `email` (VARCHAR)
+   - `password` (VARCHAR)
+
+2. **Projects Table**
+   - id (INT, Primary Key)
+   - title (VARCHAR)
+   - description (TEXT)
+   - link (VARCHAR)
+
+# Steps to Setup Database
+1. **Create Database**
+  CREATE DATABASE my_portfolio_db;
