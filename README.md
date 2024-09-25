@@ -41,5 +41,14 @@ This project is a personal portfolio showcasing my web development skills and pr
    - `password` (VARCHAR)
 
 # Steps to Setup Database
-1. **Create Database**
+**Create Database**
   CREATE DATABASE my_portfolio_db;
+# How to Access the Project
+1.Clone the repository:
+git clone https://github.com/kherakhushi/personalportfolio.git
+2.Navigate to the project directory:
+cd personalportfolio
+3.Set up your local environment (e.g., using WAMP or XAMPP).
+4.Import the SQL file or create the database and tables as mentioned above.
+5.Open your web browser and navigate to http://localhost/your-project-folder
+
