@@ -1,6 +1,4 @@
-<?php
-// admin-login.php
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,33 +10,33 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2c2c2c; /* Dark background */
-    color: #f4f4f9; /* Light text color */
+    background-color: #2c2c2c;
+    color: #f4f4f9; 
 }
 
 header {
-    background: #1a1a1a; /* Darker header */
+    background: #1a1a1a; 
     color: #f4f4f9;
     padding: 20px 0;
     text-align: center;
 }
 
 nav a {
-    color: #f4f4f9; /* Light link color */
+    color: #f4f4f9;
     margin: 0 15px;
     text-decoration: none;
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: #66bb6a; /* Light green on hover */
+    color: #66bb6a;
 }
 
 main {
-    max-width: 400px; /* Smaller width for login */
-    margin: 100px auto; /* Centered with some top margin */
+    max-width: 400px; 
+    margin: 100px auto; 
     padding: 20px;
-    background: #3e3e3e; /* Lighter dark for form background */
+    background: #3e3e3e;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -59,28 +57,28 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: 700;
-    color: #f4f4f9; /* Light label color */
+    color: #f4f4f9; 
 }
 
 input[type="text"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #666; /* Dark border */
+    border: 1px solid #666; 
     border-radius: 4px;
     font-size: 16px;
-    background: #444; /* Dark background for inputs */
-    color: #f4f4f9; /* Light text color for inputs */
+    background: #444;
+    color: #f4f4f9;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus {
-    border-color: #66bb6a; /* Light green on focus */
+    border-color: #66bb6a; 
     outline: none;
 }
 
 .btn {
-    background: #66bb6a; /* Button color */
+    background: #66bb6a;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -91,13 +89,13 @@ input[type="password"]:focus {
 }
 
 .btn:hover {
-    background: #57a65b; /* Darker green on hover */
+    background: #57a65b; 
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #1a1a1a; /* Darker footer */
+    background: #1a1a1a;
     color: #f4f4f9;
     position: relative;
     bottom: 0;
