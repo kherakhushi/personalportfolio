@@ -34,17 +34,11 @@ This project is a personal portfolio showcasing my web development skills and pr
 `my_portfolio_db`
 
 # Database Structure
-1. **Users Table**
+ **Users Table**
    - `id` (INT, Primary Key)
    - `name` (VARCHAR)
    - `email` (VARCHAR)
    - `password` (VARCHAR)
-
-2. **Projects Table**
-   - id (INT, Primary Key)
-   - title (VARCHAR)
-   - description (TEXT)
-   - link (VARCHAR)
 
 # Steps to Setup Database
 1. **Create Database**
