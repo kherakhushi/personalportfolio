@@ -1,28 +1,18 @@
 <?php
 session_start();
-
-// Check if the user is logged in
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header("location: admin-login.php");
     exit;
 }
-
-// Database connection settings
-$servername = "localhost"; // Change if your DB server is different
-$username = "root"; // Your database username
-$password = ""; // Your database password
-$dbname = "portfolio_db"; // Your database name
-
-// Create connection
+$servername = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$dbname = "portfolio_db";
 $conn = new mysqli( "localhost", "root",  "", "portfolio_db");
-
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-// Fetch data from the contacts table
-$sql = "SELECT * FROM contacts"; // Change 'contacts' to your actual table name
+$sql = "SELECT * FROM contacts"; 
 $result = $conn->query($sql);
 ?>
 
