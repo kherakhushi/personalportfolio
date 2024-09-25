@@ -1,16 +1,13 @@
 <?php
 session_start();
+$servername = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$dbname = "portfolio_db"; 
 
-// Database connection settings (if needed for admin functions)
-$servername = "localhost"; // Change if your DB server is different
-$username = "root"; // Your database username
-$password = ""; // Your database password
-$dbname = "portfolio_db"; // Your database name
 
-// Create connection
 $conn = new mysqli("localhost", "root", "", "portfolio_db");
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
