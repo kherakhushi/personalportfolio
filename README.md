@@ -38,7 +38,7 @@ This project is a personal portfolio showcasing my web development skills and pr
    - `id` (INT, Primary Key)
    - `name` (VARCHAR)
    - `email` (VARCHAR)
-   - `password` (VARCHAR)
+
 
 # Steps to Setup Database
 **Create Database**
