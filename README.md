@@ -31,7 +31,7 @@ This project is a personal portfolio showcasing my web development skills and pr
 
 -><b> Database Setup</b>
 # Database Name
-`my_portfolio_db`
+`portfolio_db`
 
 # Database Structure
  **Users Table**
