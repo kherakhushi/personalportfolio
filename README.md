@@ -29,7 +29,7 @@ This project is a personal portfolio showcasing my web development skills and pr
 - PHP
 - MySQL
 
--><b> Database Setup</b>
+<h1>Database Setup</h1> 
 # Database Name
 `portfolio_db`
 
