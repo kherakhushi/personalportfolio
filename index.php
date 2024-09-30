@@ -194,4 +194,50 @@
             }
         }
     </style>
-   
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="about.php">About Me</a>
+            <a href="contact.php">Contact</a>
+            <a href="admin-login.php">Admin Login</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Hello!</h2>
+            <img src="portfolio.jpg" alt="KHUSHI KHERA" class="profile-image"> <!-- Ensure the image path is correct -->
+            <p>I am a passionate web developer with expertise in building responsive and dynamic web applications. Explore my work below!</p>
+        </section>
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Hotel Management</h3>
+                    <p>Description: Developing a comprehensive hostel management system to streamline room allocation, check-in/check-out processes, meal management, visitor tracking, staff management, inventory control, and billing systems.<br>
+                    Role: Lead Developer<br>
+                    Responsibilities: Designing user-friendly interfaces, implementing data security measures, ensuring project milestones are met.<br>
+                    Technologies Used: HTML, CSS, MySQL, Adobe Photoshop, CorelDRAW.<br>
+                    Tools: Notepad++, WampServer.</p>
+                    <a href="project.php?id=1" class="btn">View Project</a>
+                </div>
+                <div class="project-item">
+                    <h3>Personal Portfolio</h3>
+                    <p>Description: Creating a professional portfolio showcasing web development projects, design work, and certifications to highlight skills and expertise.<br>
+                    Role: Designer and Developer<br>
+                    Responsibilities: Designing and developing an interactive portfolio website, showcasing projects, and updating content regularly.<br>
+                    Technologies Used: HTML, CSS, Adobe Photoshop, CorelDRAW.<br>
+                    Tools: Notepad++, WampServer.</p>
+                    <a href="project.php?id=2" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
