@@ -8,10 +8,10 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 }
 
 
-$servername = "localhost"; // Change if your DB server is different
-$username = "root"; // Your database username
-$password = ""; // Your database password
-$dbname = "portfolio_db"; // Your database name
+$servername = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$dbname = "portfolio_db"; 
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
