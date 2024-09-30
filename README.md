@@ -30,7 +30,7 @@ This project is a personal portfolio showcasing my web development skills and pr
 - MySQL
 
 <h1>Database Setup</h1> 
-# Database Name
+Database Name
 `portfolio_db`
 
 # Database Structure
