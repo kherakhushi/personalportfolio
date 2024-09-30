@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Sanitize input data
+
     $name = $conn->real_escape_string(trim($_POST['name']));
     $email = $conn->real_escape_string(trim($_POST['email']));
     $message = $conn->real_escape_string(trim($_POST['message']));
@@ -26,6 +26,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<p>Invalid request.</p>";
 }
 
-// Close the database connection
 $conn->close();
 ?>
