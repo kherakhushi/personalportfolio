@@ -3,82 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2c2c2c; 
-    color: #f4f4f9; 
-}
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c2c2c; 
+            color: #f4f4f9; 
+        }
 
-header {
-    background: #1a1a1a; 
-    color: #f4f4f9;
-    padding: 20px 0;
-    text-align: center;
-}
+        header {
+            background: #1a1a1a; 
+            color: #f4f4f9;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-h1.animated-header {
-    margin: 0;
-    font-size: 2.5rem;
-    animation: fadeIn 1s ease-in-out; 
-}
+        h1.animated-header {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeIn 1s ease-in-out; 
+        }
 
-nav a {
-    color: #f4f4f9;     margin: 0 15px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
+        nav a {
+            color: #f4f4f9;     
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
 
-nav a:hover {
-    color: #66bb6a; 
-}
+        nav a:hover {
+            color: #66bb6a; 
+        }
 
-main {
-    max-width: 800px; 
-    margin: 40px auto; 
-    padding: 20px;
-    background: #3e3e3e;     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
+        main {
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 20px;
+            background: #3e3e3e;     
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
 
-section {
-    margin-bottom: 30px; }
+        section {
+            margin-bottom: 30px; 
+        }
 
-h2.animated-header {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    animation: fadeIn 1s ease-in-out;
-}
+        h2.animated-header {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
 
-p.animated-text {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
+        p.animated-text {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
 
-.skills ul {
-    list-style: none; 
-    padding: 0; 
-}
+        .skills ul {
+            list-style: none; 
+            padding: 0; 
+        }
 
-.skills li.animated-item {
-    background: #444; 
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px 0;
-    animation: fadeIn 1s ease-in-out; 
-}
+        .skills li.animated-item {
+            background: #444; 
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+            animation: fadeIn 1s ease-in-out; 
+        }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+        .resume-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #66bb6a;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
 
-</style>    <title>About Me</title>
+        .resume-button:hover {
+            background-color: #57a05a;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>About Me</title>
 </head>
 <body>
     <header>
@@ -107,6 +126,15 @@ p.animated-text {
                 <li class="animated-item">React & Angular</li>
             </ul>
         </section>
+        <section>
+            <a href="khera_resume.pdf" class="resume-button" target="_blank" onclick="showDownloadAlert()">Download My Resume</a>
+        </section>
     </main>
-   </body>
+
+    <script>
+        function showDownloadAlert() {
+            alert("Your resume is downloading!");
+        }
+    </script>
+</body>
 </html>
