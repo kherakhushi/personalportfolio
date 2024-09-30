@@ -1,18 +1,28 @@
 <?php
 session_start();
+
+// Check if the user is logged in
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header("location: admin-login.php");
     exit;
 }
-$servername = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$dbname = "portfolio_db";
-$conn = new mysqli( "localhost", "root",  "", "portfolio_db");
+
+// Database connection settings
+$servername = "localhost"; // Change if your DB server is different
+$username = "root"; // Your database username
+$password = ""; // Your database password
+$dbname = "portfolio_db"; // Your database name
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT * FROM contacts"; 
+
+// Fetch data from the contacts table
+$sql = "SELECT * FROM contacts"; // Change 'contacts' to your actual table name
 $result = $conn->query($sql);
 ?>
 
@@ -64,6 +74,9 @@ $result = $conn->query($sql);
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
         }
 
         .btn-logout:hover {
@@ -71,11 +84,15 @@ $result = $conn->query($sql);
         }
     </style>
     <title>Admin Panel</title>
+    <script>
+        function confirmLogout() {
+            return confirm("Are you sure you want to log out?");
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Admin Panel</h1>
-        <a href="admin-login.php" class="btn-logout">Logout</a>
     </header>
     
     <main>
@@ -103,6 +120,11 @@ $result = $conn->query($sql);
             }
             ?>
         </table>
+        
+        <!-- Logout Button -->
+        <form method="post" action="admin-login.php" onsubmit="return confirmLogout();">
+            <button type="submit" class="btn-logout">Logout</button>
+        </form>
     </main>
 </body>
 </html>
