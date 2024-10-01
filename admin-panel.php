@@ -1,31 +1,20 @@
 <?php
 session_start();
-
-// Check if the user is logged in
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header("location: admin-login.php");
     exit;
 }
-
-// Database connection settings
-$servername = "localhost"; // Change if your DB server is different
-$username = "root"; // Your database username
-$password = ""; // Your database password
-$dbname = "portfolio_db"; // Your database name
-
-// Create connection
+$servername = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$dbname = "portfolio_db"; 
 $conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-// Fetch data from the contacts table
-$sql = "SELECT * FROM contacts"; // Change 'contacts' to your actual table name
+$sql = "SELECT * FROM contacts"; 
 $result = $conn->query($sql);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +22,7 @@ $result = $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Add some basic styles */
+      
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #2c2c2c;
@@ -106,7 +95,6 @@ $result = $conn->query($sql);
             </tr>
             <?php
             if ($result->num_rows > 0) {
-                // Output data of each row
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr>
                             <td>{$row['id']}</td>
@@ -120,16 +108,12 @@ $result = $conn->query($sql);
             }
             ?>
         </table>
-        
-        <!-- Logout Button -->
         <form method="post" action="admin-login.php" onsubmit="return confirmLogout();">
             <button type="submit" class="btn-logout">Logout</button>
         </form>
     </main>
 </body>
 </html>
-
 <?php
-// Close the database connection
 $conn->close();
 ?>
