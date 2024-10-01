@@ -14,7 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $admin_username = "khushi";
     $admin_password = "215512";
     if ($username === $admin_username && $password === $admin_password) {
-        // Set session variable and redirect to admin panel
         $_SESSION['loggedin'] = true;
         header("location: admin-panel.php");
         exit;
