@@ -84,28 +84,22 @@
         }
 
         .profile-image {
-    width: 250px; /* Set a fixed width */
-    height: 250px; /* Set a fixed height */
-    border-radius: 50%; /* Use 50% for circular shape */
+    width: 250px;
+    height: 250px; 
+    border-radius: 50%; 
     margin: 20px 0;
     border: 4px solid #66bb6a;
     transition: transform 0.3s;
-    object-fit: cover; /* Ensure the image covers the area without distortion */
+    object-fit: cover; 
 }
 h2 {
-    font-family: 'Dancing Script', cursive; /* Stylish font */
-    font-size: 2.5rem; /* Adjust size as needed */
+    font-family: 'Dancing Script', cursive; 
+    font-size: 2.5rem; 
     color:#66bb6a;
-/* Change color as desired */
-    text-align: center; /* Center align the text */
-    margin: 10px 0; /* Adjust margins */
-    letter-spacing: 1px; /* Add some space between letters */
+    text-align: center; 
+    margin: 10px 0; 
+    letter-spacing: 1px; 
 }
-
-
-
-        
-
         .profile-image:hover {
             transform: scale(1.05); 
         }
@@ -250,8 +244,5 @@ h2 {
             </div>
         </section>
     </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
