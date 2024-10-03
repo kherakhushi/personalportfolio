@@ -157,7 +157,7 @@
             <a href="tel:+1234567890" title="Phone"><i class="fas fa-phone"></i></a>
         </div>
         <div class="contact-info">
-            <p>Phone: +1 234 567 890</p>
+            <p>Phone: +9919919190</p>
         </div>
     </footer>
     
